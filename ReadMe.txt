@@ -9,9 +9,8 @@ git reset --hard HEADID//回到指定的版本
 git log //查看当前的所有操作
 git reflog //查看所有操作
 git config global core.autocrlf true //将windows下的回车+换行CRLF自动改成linux下的LF
-git restore -- filename//将文件在工作区中的修改全部都撤销，撤销后回到版本库一模一样的状态；
-//如果文件已经被放入暂存区后，使用这个指令就可以让文件回到最近的一次残存库状态
-
+git checkout -- filename//将文件在工作区中的修改全部都撤销，撤销后回到版本库一模一样的状态；
+git reset HEAD filename //将放入暂存区的修改撤销重新放回工作区
 
 原理讲解：
 git的版本库是什么东西
