@@ -19,6 +19,8 @@ git remote add origin git@github.com:Akirualuka/learngit.git//在github创建一
 git push -u origin master//(第一次)将本地库的内容推送到远程库
 git push origin master//之后推送
 
+git remote rm <name>//该名字是远程库的名字，为之前远程创建远程库的名字
+git remote -v //显示当前存在的远程库信息
 
 原理讲解：
 git的版本库是什么东西
