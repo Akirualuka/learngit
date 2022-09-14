@@ -17,7 +17,7 @@ ssh-keygen -t rsa -C "youremail@example.com" //生成一个SSH密钥
 //将密钥加入到github本地的ssh key中
 git remote add origin git@github.com:Akirualuka/learngit.git//在github创建一个远程库
 git push -u origin master//(第一次)将本地库的内容推送到远程库
-git oush origin master//之后推送
+git push origin master//之后推送
 
 
 原理讲解：
