@@ -22,6 +22,9 @@ git push origin master//之后推送
 git remote rm <name>//该名字是远程库的名字，为之前远程创建远程库的名字
 git remote -v //显示当前存在的远程库信息
 
+git clone git@github.com:Akirualuka/<库名字>.git//将远程库克隆到本地库的当前位置
+
+
 原理讲解：
 git的版本库是什么东西
 所有的git操作都是基于版本库，版本库不是工作区，类似于功能区
