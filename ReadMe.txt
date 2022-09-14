@@ -75,5 +75,8 @@ git用master指向最新的提交点，再用HEAD指向这个master，每次提�
 如何将分支合并
 只需要将master指针指向dev当前的位置就可以实现分支合并，最后将dev的指针删除就只剩下一个master分支
 
-Create a new branch is quick and simple
-bifhoahfauhf;
+<<<<<<< HEAD
+this is a hfoashfoahfgo
+=======
+this is a hfoashfoahfgo
+>>>>>>> feature1
