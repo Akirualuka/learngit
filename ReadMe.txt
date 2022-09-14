@@ -24,6 +24,13 @@ git remote -v //显示当前存在的远程库信息
 
 git clone git@github.com:Akirualuka/<库名字>.git//将远程库克隆到本地库的当前位置
 
+分支：
+git branch name //创建一个分支name
+git checkout name //切换到name这个分支
+上两个指令相当于
+git checkout -b name
+
+git branch 查看当前的分支和当前所在的分支
 
 原理讲解：
 git的版本库是什么东西
@@ -40,6 +47,7 @@ git 将所有修改的文件都存在暂存区中，通过commit一次性将所�
 git 跟踪和管理的是修改并不是文件
 
 
+
 分支概念的引入
 分支：每一次版本变化构成一个时间线，一个时间线就是一个分支。
 主分支为master，HEAD严格来说是指向master的指针，
@@ -53,3 +61,5 @@ git用master指向最新的提交点，再用HEAD指向这个master，每次提�
 
 如何将分支合并
 只需要将master指针指向dev当前的位置就可以实现分支合并，最后将dev的指针删除就只剩下一个master分支
+
+
