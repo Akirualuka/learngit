@@ -42,7 +42,11 @@ git branch 查看当前的分支和当前所在的分支
 git branch -d dev 删除dev分支
 
 分支解决冲突问题：
-
+问题描述：创建一个分支，在分支中修改了文件后在master分支中同样修改了文件，
+最后在merge合并分支时两个分支产生了冲突
+需要将更改的内容一致才能使用merge合并两个分支
+查看分支的创建和处理过程
+git log --graph --pretty=oneline --abbrev-commit
 
 
 原理讲解：
@@ -76,4 +80,4 @@ git用master指向最新的提交点，再用HEAD指向这个master，每次提�
 只需要将master指针指向dev当前的位置就可以实现分支合并，最后将dev的指针删除就只剩下一个master分支
 
 
-this is the new branch
+
