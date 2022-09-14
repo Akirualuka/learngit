@@ -13,6 +13,12 @@ git checkout -- filename//将文件在工作区中的修改全部都撤销，撤
 git reset HEAD filename //将放入暂存区的修改撤销重新放回工作区
 git rm filename //在工作区中删除文件
 
+ssh-keygen -t rsa -C "youremail@example.com" //生成一个SSH密钥
+//将密钥加入到github本地的ssh key中
+git remote add origin git@github.com:Akirualuka/learngit.git//在github创建一个远程库
+git push //将本地库的内容推送到远程库
+
+
 
 原理讲解：
 git的版本库是什么东西
