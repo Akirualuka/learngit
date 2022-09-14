@@ -41,6 +41,9 @@ git branch 查看当前的分支和当前所在的分支
 
 git branch -d dev 删除dev分支
 
+分支解决冲突问题：
+
+
 
 原理讲解：
 git的版本库是什么东西
