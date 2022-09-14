@@ -30,6 +30,11 @@ git checkout name //切换到name这个分支
 上两个指令相当于
 git checkout -b name
 
+还有一种创建分支的方法：
+git branch name  创建分支
+git switch name  切换分支
+git switch -c name 创建并切换到分支name
+
 git branch 查看当前的分支和当前所在的分支
 在master分支中输入git merge dev将dev分支合并到master中
 相当于master直接指向devHEAD指向master
