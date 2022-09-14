@@ -32,6 +32,10 @@ git checkout -b name
 
 git branch 查看当前的分支和当前所在的分支
 在master分支中输入git merge dev将dev分支合并到master中
+相当于master直接指向devHEAD指向master
+
+git branch -d dev 删除dev分支
+
 
 原理讲解：
 git的版本库是什么东西
