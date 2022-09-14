@@ -47,7 +47,7 @@ git branch -d dev 删除dev分支
 需要将更改的内容一致才能使用merge合并两个分支
 查看分支的创建和处理过程
 git log --graph --pretty=oneline --abbrev-commit
-
+git log --graph  图形化log过程
 
 原理讲解：
 git的版本库是什么东西
