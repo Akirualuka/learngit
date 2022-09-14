@@ -3,6 +3,7 @@ git add filename
 git commit -m "***"//注释
 git status //查看当前文件的状态
 git diff//查看不同
+git diff HEAD -- filename //可以查看工作区和版本库之间的差别，HEAD位于版本库
 git reset --hard HEAD^//回到前一个版本
 git reset --hard HEADID//回到指定的版本
 git log //查看当前的所有操作
@@ -22,4 +23,4 @@ git的版本库是什么东西
 git 将所有修改的文件都存在暂存区中，通过commit一次性将所有内容提交上去
 
 git 跟踪和管理的是修改并不是文件
-//该行是测
+
