@@ -67,8 +67,16 @@ git 跟踪和管理的是修改并不是文件
 
 问题描述：
 在dev执行工作时出现突发的事情，但是工作没做完不能提交，这是需要将当前工作区存储起来在别的分支进行其他事情
-git t提供了stash功能，能将工作现场存储起来，等将来要用时继续恢复工作
+git 提供了stash功能，能将工作现场存储起来，等将来要用时继续恢复工作
+git stash //把当前工作区存储起来等以后恢复现场再继续工作
+git stash apply //将stash内容恢复但是被删除stash
+git stash drop //删除该stash
+前两行代码可以等效为
+git stash pop
 
+git stash list//查看当前存在的stash
+
+有多个stash时使用git stash apply stash@{2}可以恢复指定的stash内容
 
 分支概念的引入
 分支：每一次版本变化构成一个时间线，一个时间线就是一个分支。
