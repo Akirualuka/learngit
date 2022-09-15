@@ -49,6 +49,8 @@ git branch -d dev 删除dev分支
 git log --graph --pretty=oneline --abbrev-commit
 git log --graph  图形化log过程
 
+
+
 原理讲解：
 git的版本库是什么东西
 所有的git操作都是基于版本库，版本库不是工作区，类似于功能区
@@ -79,5 +81,7 @@ git用master指向最新的提交点，再用HEAD指向这个master，每次提�
 如何将分支合并
 只需要将master指针指向dev当前的位置就可以实现分支合并，最后将dev的指针删除就只剩下一个master分支
 
-
+分支管理策略：
+在合并分支时使用的是git merge name,这是一种Fast forward 模式，
+这种模式在删除分支时会丢掉分支信息
 
