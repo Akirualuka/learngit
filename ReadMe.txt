@@ -84,4 +84,8 @@ git用master指向最新的提交点，再用HEAD指向这个master，每次提�
 分支管理策略：
 在合并分支时使用的是git merge name,这是一种Fast forward 模式，
 这种模式在删除分支时会丢掉分支信息
+使用git merge --no-ff -m "  " dev本次合并后提交一个commit
+
+一般情况下，在dev分支上修改，master分支作为发布版本
+工作分支合并到dev分支中，发布时将dev分支合并到master中
 
