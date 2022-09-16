@@ -98,6 +98,14 @@ git show 标签名 查看具体的标签情况
 git tag 标签名 commit_id 给commit打上标签
 
 所有的标签都是基于commit的
+所有大上的标签都是存在本地中的
+可以删除，使用git tag -d tagname
+如果要推送某个标签到远程使用：git push origin tagname
+也可以一次性推送完:git push origin --tags
+如果要删除远程的标签分两步：
+1：现将本地的标签删除git tag -d tagname
+2:将远程的tag删除 git push origin :refs/tags/tagname
+
 
 
 
