@@ -84,6 +84,14 @@ git cherry-pick <commit ID>
 当在一个分支上commit后，回到dev没有合并分支删除时会不让我们删
 这是需要使用 git branch -D branchname
 
+远程多人合作时，两个人都对dev做了修改后想要commit和push会出现冲突提示
+git pull 可将最新的提交从origin/dev抓下来，然后在本地合并,解决冲突后再推送
+git pull 会失败，因为本地没有指定本地dev和远程origin/dev的关联
+使用 git branch --set-upstream-to=origin/dev dev 将远程库下的origin/dev与本地库的dev关联
+然后就可以使用git pull
+
+
+
 分支概念的引入
 分支：每一次版本变化构成一个时间线，一个时间线就是一个分支。
 主分支为master，HEAD严格来说是指向master的指针，
