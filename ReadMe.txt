@@ -50,7 +50,7 @@ git branch -d dev 删除dev分支
 git log --graph --pretty=oneline --abbrev-commit
 git log --graph  图形化log过程
 
-
+gitee 与git的管理使用remote这些
 
 原理讲解：
 git的版本库是什么东西
@@ -65,6 +65,7 @@ git的版本库是什么东西
 git 将所有修改的文件都存在暂存区中，通过commit一次性将所有内容提交上去
 
 git 跟踪和管理的是修改并不是文件
+
 
 问题描述：
 在dev执行工作时出现突发的事情，但是工作没做完不能提交，这是需要将当前工作区存储起来在别的分支进行其他事情
