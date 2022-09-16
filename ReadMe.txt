@@ -77,6 +77,12 @@ git stash pop
 git stash list//查看当前存在的stash
 
 有多个stash时使用git stash apply stash@{2}可以恢复指定的stash内容
+如果有多个分支都存在bug但是只提交了master这个分支，如何将这个修改同步到其他存在相同问题的分支中呢？？
+git中使用cherry-pick来同步分支的部分修改而不将整个分支merge过来
+git cherry-pick <commit ID>
+
+当在一个分支上commit后，回到dev没有合并分支删除时会不让我们删
+这是需要使用 git branch -D branchname
 
 分支概念的引入
 分支：每一次版本变化构成一个时间线，一个时间线就是一个分支。
